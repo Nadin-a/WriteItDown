@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="pref_color_option_labels">
+        <item>@string/pref_color_label_FloralWhite</item>
+        <item>@string/pref_color_label_blue</item>
+        <item>@string/pref_color_label_AliceBlue</item>
+        <item>@string/pref_color_label_SpringGreen</item>
+        <item>@string/pref_color_label_white</item>
+        <item>@string/pref_color_label_plum</item>
+        <item>@string/pref_color_label_Cornsilk</item>
+        <item>@string/pref_color_label_LightCyan</item>
+        <item>@string/pref_color_label_LightPink</item>
+
+    </array>
+
+    <array name="pref_color_option_values">
+        <item>@string/pref_color_FloralWhite_value</item>
+        <item>@string/pref_color_blue_value</item>
+        <item>@string/pref_color_AliceBlue_value</item>
+        <item>@string/pref_color_SpringGreen_value</item>
+        <item>@string/pref_color_white_value</item>
+        <item>@string/pref_color_plum_value</item>
+        <item>@string/pref_color_Cornsilk1_value</item>
+        <item>@string/pref_color_LightCyan1_value</item>
+        <item>@string/pref_color_LightPink1_value</item>
+
+    </array>
+
+
+</resources>

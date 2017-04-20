@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Write It Down!</string>
+    <string name="add">Done</string>
+    <string name="upd">Update</string>
+    <string name="delete">Delete</string>
+    <string name="type">Type your note:</string>
+    <string name="your_note">Your note</string>
+    <string name="send">Send</string>
+    <string name="app_settings">Settings</string>
+
+    <string name="search">Search</string>
+
+    <string name="check_box_date_key" translatable="false">date</string>
+    <string name="check_box_date_label">Show Date</string>
+
+    <string name="accept_deleting_key" translatable="false">accept</string>
+    <string name="check_box_accept_del_label">Confirm deleting</string>
+
+
+    <string name="check_box_sort_key" translatable="false">sort_by</string>
+    <string name="check_box_sort_label">Sort by date</string>
+
+    <string name="pref_show_true">Shown</string>
+    <string name="pref_show_false">Hidden</string>
+
+    <string name="color_key" translatable="false">color</string>
+    <string name="color_label">Color</string>
+
+    <string name="sort_by_date">Sorted by date</string>
+    <string name="sort_by_name">Sorted by alphabet</string>
+
+    <string name="request">Yes</string>
+    <string name="not_request">No</string>
+
+    <string name="pref_color_label_FloralWhite">Floral White</string>
+    <string name="pref_color_label_blue">Powder Blue</string>
+    <string name="pref_color_label_AliceBlue">Alice Blue</string>
+    <string name="pref_color_label_SpringGreen">Spring Green</string>
+    <string name="pref_color_label_white">White</string>
+    <string name="pref_color_label_plum">Plum</string>
+    <string name="pref_color_label_Cornsilk">Cornsilk</string>
+    <string name="pref_color_label_LightCyan">Light Cyan</string>
+    <string name="pref_color_label_LightPink">Light Pink</string>
+
+
+
+    <string name="pref_color_FloralWhite_value" translatable="false">255,250,240</string>
+    <string name="pref_color_blue_value" translatable="false">176,224,230</string>
+    <string name="pref_color_AliceBlue_value" translatable="false">240,248,255</string>
+    <string name="pref_color_SpringGreen_value" translatable="false">0,255,127</string>
+    <string name="pref_color_white_value" translatable="false">255,255,255</string>
+    <string name="pref_color_plum_value" translatable="false">221,160,221</string>
+    <string name="pref_color_Cornsilk1_value" translatable="false">255,248,220</string>
+    <string name="pref_color_LightCyan1_value" translatable="false">224,255,255</string>
+    <string name="pref_color_LightPink1_value" translatable="false">255,174,185</string>
+
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="dialog_message">Are you sure?</string>
+    <string name="dialog_title">Accept deleting</string>
+</resources>

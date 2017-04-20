@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Запиши это</string>
+    <string name="add">Готово!</string>
+    <string name="upd">Редактировать</string>
+    <string name="delete">Удалить</string>
+    <string name="type">Введите текст:</string>
+    <string name="your_note">Ваша заметка</string>
+    <string name="send">Отправить</string>
+    <string name="app_settings">Настройки</string>
+
+    <string name="search">Поиск</string>
+
+    <string name="check_box_date_key" translatable="false">data</string>
+    <string name="check_box_date_label">Показывать дату</string>
+
+    <string name="accept_deleting_key" translatable="false">accept</string>
+    <string name="check_box_accept_del_label">Подтверждать удаление</string>
+
+
+    <string name="check_box_sort_key" translatable="false">sort_by</string>
+    <string name="check_box_sort_label">Сортировать</string>
+
+    <string name="pref_show_true">Показать</string>
+    <string name="pref_show_false">Скрыть</string>
+
+    <string name="color_key" translatable="false">color</string>
+    <string name="color_label">Цвет фона</string>
+
+    <string name="sort_by_date">По дате</string>
+    <string name="sort_by_name">По алфавиту</string>
+
+    <string name="request">Да</string>
+    <string name="not_request">Нет</string>
+
+    <string name="pref_color_label_FloralWhite">Floral White</string>
+    <string name="pref_color_label_blue">Powder Blue</string>
+    <string name="pref_color_label_AliceBlue">Alice Blue</string>
+    <string name="pref_color_label_SpringGreen">Spring Green</string>
+    <string name="pref_color_label_white">White</string>
+    <string name="pref_color_label_plum">Plum</string>
+    <string name="pref_color_label_Cornsilk">Cornsilk</string>
+    <string name="pref_color_label_LightCyan">Light Cyan</string>
+    <string name="pref_color_label_LightPink">Light Pink</string>
+
+
+
+    <string name="pref_color_FloralWhite_value" translatable="false">255,250,240</string>
+    <string name="pref_color_blue_value" translatable="false">176,224,230</string>
+    <string name="pref_color_AliceBlue_value" translatable="false">240,248,255</string>
+    <string name="pref_color_SpringGreen_value" translatable="false">0,255,127</string>
+    <string name="pref_color_white_value" translatable="false">255,255,255</string>
+    <string name="pref_color_plum_value" translatable="false">221,160,221</string>
+    <string name="pref_color_Cornsilk1_value" translatable="false">255,248,220</string>
+    <string name="pref_color_LightCyan1_value" translatable="false">224,255,255</string>
+    <string name="pref_color_LightPink1_value" translatable="false">255,174,185</string>
+
+    <string name="ok">Да</string>
+    <string name="cancel">Отмена</string>
+    <string name="dialog_message">Вы уверены?</string>
+    <string name="dialog_title">Подтвердите удаление</string>
+</resources>

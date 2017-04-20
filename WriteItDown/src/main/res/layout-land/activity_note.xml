@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/activity_note_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.nadina.android.writeitdown.Note.NoteActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginLabel"
+            android:text="@string/type"
+            android:textStyle="normal"/>
+
+        <EditText
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/send_to_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin"
+            android:layout_weight="2"
+            android:background="@color/color1"
+            android:text="@string/add"/>
+
+        <Button
+            android:id="@+id/send_to_network"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin"
+            android:layout_weight="2"
+            android:background="@color/color1"
+            android:text="@string/send"/>
+
+    </LinearLayout>
+</layout>
