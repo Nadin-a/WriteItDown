@@ -25,7 +25,7 @@ public class NoteDbHelper extends SQLiteOpenHelper {
         final String SQL_CREATE_NOTE_TABLE = " CREATE TABLE " + NoteEntry.TABLE_NAME + " (" +
                 NoteEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
                 NoteEntry.NOTE + " TEXT NOT NULL, " +
-                NoteEntry.DATE + " TEXT NOT NULL "
+                NoteEntry.DATE + " DATE NOT NULL "
                 + ");";
 
         sqLiteDatabase.execSQL(SQL_CREATE_NOTE_TABLE);
