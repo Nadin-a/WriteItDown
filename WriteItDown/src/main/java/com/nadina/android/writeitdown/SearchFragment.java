@@ -49,6 +49,9 @@ public class SearchFragment extends Fragment {
         super.onCreate(savedInstanceState);
     }
 
+    /**
+     Getting a search string and sending data to NoteListActivity
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 

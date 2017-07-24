@@ -13,6 +13,7 @@ import com.nadina.android.writeitdown.R;
 
 /**
  * Created by Nadina on 12.03.2017.
+ * Settings.
  */
 
 public class SettingsFragment extends PreferenceFragmentCompat implements

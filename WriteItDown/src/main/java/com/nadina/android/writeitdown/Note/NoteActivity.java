@@ -82,6 +82,9 @@ public class NoteActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Getting data from the intent.
+     */
     private void get_intent() {
         Intent intentThatStartedThisActivity = getIntent();
 
@@ -104,6 +107,9 @@ public class NoteActivity extends AppCompatActivity {
     }
 
 
+    /**
+     * Loading colors for background and setting.
+     */
     public void loadColorFromPreferences() {
         String str_color = sharedPreferences.getString(getString(R.string.color_key),
                 getString(R.string.pref_color_FloralWhite_value));

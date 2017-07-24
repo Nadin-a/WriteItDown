@@ -117,6 +117,9 @@ public class NoteListActivity extends AppCompatActivity implements
 
         }).attachToRecyclerView(mRecyclerView);
 
+        /**
+         * Getting data from intent.
+         */
         if (intentThatStartedThisActivity.hasExtra(Intent.EXTRA_TEXT)) {
             String textEntered = intentThatStartedThisActivity.getStringExtra(Intent.EXTRA_TEXT);
             long index = getIntent().getExtras().getLong(STR_INDEX);
@@ -132,6 +135,9 @@ public class NoteListActivity extends AppCompatActivity implements
 
     }
 
+    /**
+     * Removing note.
+     */
     private void deletingNoteAction(RecyclerView.ViewHolder viewHolder) {
         long id = (long) viewHolder.itemView.getTag();
         remove_Note(id);
@@ -139,6 +145,9 @@ public class NoteListActivity extends AppCompatActivity implements
     }
 
 
+    /**
+     * Loading colors for background and setting.
+     */
     public void loadColorFromPreferences() {
         String str_color = sharedPreferences.getString(getString(R.string.color_key),
                 getString(R.string.pref_color_FloralWhite_value));
@@ -158,9 +167,12 @@ public class NoteListActivity extends AppCompatActivity implements
 
         String orderBy = "";
 
+        /**
+         * Sorting by date and name.
+         */
         if (sharedPreferences.getBoolean(context.getString(R.string.check_box_sort_key),
                 context.getResources().getBoolean(R.bool.pref_bool_sort_by_date))) {
-            orderBy = NoteContract.NoteEntry.DATE + " DESC";
+            orderBy = NoteContract.NoteEntry.DATE + " DESC"; //bug here. Problem with sorting by date.
         } else {
             orderBy = NoteContract.NoteEntry.NOTE + " ASC";
         }
@@ -178,6 +190,10 @@ public class NoteListActivity extends AppCompatActivity implements
 
     }
 
+    /**
+     * Search by some letters
+     * @return query of results
+     */
     public Cursor getSearchResults() {
         return mDb.query(NoteContract.NoteEntry.TABLE_NAME,
                 null,
@@ -188,12 +204,15 @@ public class NoteListActivity extends AppCompatActivity implements
 
 
     @Override
-    public void someEvent(String s) {
-        searchString = s;
+    public void someEvent(String searchStringFromFragment) {
+        searchString = searchStringFromFragment;
         isSearch = true;
         createCursor();
     }
 
+    /**
+     * Opens the selected note and starts another activity for reading or updating.
+     */
     public void openNote(long position) {
 
         Cursor cursor = mDb.query(NoteContract.NoteEntry.TABLE_NAME,
@@ -215,6 +234,9 @@ public class NoteListActivity extends AppCompatActivity implements
     }
 
 
+    /**
+     * Adding new note to the database.
+     */
     private long add_Note(String note, String date) {
         ContentValues cv = new ContentValues();
         cv.put(NoteContract.NoteEntry.NOTE, note);
@@ -222,6 +244,9 @@ public class NoteListActivity extends AppCompatActivity implements
         return mDb.insert(NoteContract.NoteEntry.TABLE_NAME, null, cv);
     }
 
+    /**
+     * Updating note.
+     */
     private long update_Note(String note, long id) {
         String date = DateFormat.getDateTimeInstance().format(new Date());
         ContentValues cv = new ContentValues();
@@ -234,8 +259,10 @@ public class NoteListActivity extends AppCompatActivity implements
                 });
     }
 
+    /**
+     * Removing note from the database
+     */
     private boolean remove_Note(long id) {
-
         return mDb.delete(NoteContract.NoteEntry.TABLE_NAME, NoteContract.NoteEntry._ID + " = " + id, null) > 0;
     }
 
@@ -278,13 +305,14 @@ public class NoteListActivity extends AppCompatActivity implements
         }
     }
 
+    /**
+     * Work with fragment. Remove fragment and search results.
+     */
     @Override
     public void onBackPressed() {
-
         if (isSearch) {
             isSearch = false;
             createCursor();
-
         }
         FragmentManager fMan = this.getFragmentManager();
         if (fMan.getBackStackEntryCount() > 0) {
@@ -294,6 +322,9 @@ public class NoteListActivity extends AppCompatActivity implements
         }
     }
 
+    /**
+     * Creating cursor.
+     */
     private void createCursor() {
         cursor = getAllNotes();
         mAdapter = new NoteAdapter(this, cursor);
