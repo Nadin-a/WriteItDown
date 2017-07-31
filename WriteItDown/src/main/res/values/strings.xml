@@ -43,7 +43,6 @@
     <string name="pref_color_label_LightPink">Light Pink</string>
 
 
-
     <string name="pref_color_FloralWhite_value" translatable="false">255,250,240</string>
     <string name="pref_color_blue_value" translatable="false">176,224,230</string>
     <string name="pref_color_AliceBlue_value" translatable="false">240,248,255</string>
@@ -58,4 +57,11 @@
     <string name="cancel">Cancel</string>
     <string name="dialog_message">Are you sure?</string>
     <string name="dialog_title">Accept deleting</string>
+    <string name="add_widget">Add widget</string>
+
+    <!-- Widget -->
+    <string name="no_notes"> There are any notes!</string>
+    <string name="some_notes">There are a few notes!</string>
+    <string name="many_notes">There are a lot of notes! Check them!</string>
+
 </resources>

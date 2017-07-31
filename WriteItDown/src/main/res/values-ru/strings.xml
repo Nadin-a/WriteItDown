@@ -58,4 +58,10 @@
     <string name="cancel">Отмена</string>
     <string name="dialog_message">Вы уверены?</string>
     <string name="dialog_title">Подтвердите удаление</string>
+
+    <!-- Widget -->
+    <string name="no_notes">Нет заметок!</string>
+    <string name="some_notes">У вас есть несколько заметок!</string>
+    <string name="many_notes">У вас много заметок, проверьте!</string>
+
 </resources>
