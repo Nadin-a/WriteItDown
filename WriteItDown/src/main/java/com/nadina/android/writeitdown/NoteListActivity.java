@@ -70,7 +70,7 @@ public class NoteListActivity extends AppCompatActivity implements
 
 
         linearLayout = (LinearLayout) findViewById(R.id.linear_layout);
-        mRecyclerView = (RecyclerView) findViewById(R.id.to_do_list_recycler_view);
+        mRecyclerView = (RecyclerView) findViewById(R.id.note_recycler_view);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.setHasFixedSize(true);
 
@@ -290,15 +290,21 @@ public class NoteListActivity extends AppCompatActivity implements
             case R.id.menu_item_search: {
                 FragmentManager fMan = this.getFragmentManager();
                 FragmentTransaction fragmentTransaction = fMan.beginTransaction();
-                fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-
-                Fragment searchFragment = new SearchFragment();
-                fragmentTransaction.add(R.id.frame_for_fragment, searchFragment);
-                searchFragment.setRetainInstance(true);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
-
-                return true;
+                if (fMan.getBackStackEntryCount() <= 0) {
+                    fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+                    Fragment searchFragment = new SearchFragment();
+                    fragmentTransaction.add(R.id.frame_for_fragment, searchFragment);
+                    searchFragment.setRetainInstance(true);
+                    fragmentTransaction.addToBackStack(null);
+                    fragmentTransaction.commit();
+                    return true;
+                }
+                else {
+                    fMan.popBackStack();
+                    isSearch = false;
+                    createCursor();
+                    return true;
+                }
             }
             default:
                 return super.onOptionsItemSelected(item);
