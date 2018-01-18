@@ -2,4 +2,4 @@
 App for work with notes. User can create, update and delete her/his notes. Each note has a date of creation. User can sort notes by different parameters and search them by words. Also user can choose theme. Languages of interface: russian and english. Application have own widget.
 
 ## Screenshot
-![alt text](http://i.piccy.info/i9/62fc625b892944d538baa6e94769bc4f/1516301446/53892/1214167/photo_2018_01_18_20_50_29.jpg)
+![alt text](http://i.piccy.info/i9/b271a5cdcf7de90aa790b84403cb14aa/1516301687/119569/1214167/gfgdfg.png)
